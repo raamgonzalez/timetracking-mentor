@@ -25,3 +25,29 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+
+.wrapper{
+  padding: 16.1rem 25rem;
+}
+
+@media (768px <= width <= 1024px) {
+  .wrapper{
+    padding: 16.1rem 2rem;
+  }
+}
+
+@media (width <= 768px) {
+  .wrapper{
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex__stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 1rem 0;
+  }
+}
