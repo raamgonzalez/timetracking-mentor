@@ -1,4 +1,5 @@
 import UserStatsCard from "./UserStatsCard"
+import {data} from '../mock/data'
 
 export default function UserStats({hours}){
 
@@ -10,6 +11,7 @@ export default function UserStats({hours}){
 		color: ['bg-orange-400', 'bg-sky-400', 'bg-red-400', 'bg-green-400', 'bg-fuchsia-400', 'bg-yellow-200'],
 		svg: ['./images/icon-work.svg', './images/icon-play.svg', './images/icon-study.svg', './images/icon-exercise.svg', './images/icon-social.svg', './images/icon-self-care.svg']
 	}
+
 
 	return (
 		<>

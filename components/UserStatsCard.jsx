@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 export default function UserStatsCard({title, hours, week, color, svg}){
+
+	console.log(hours)
 	return (
 		<section className={`${color} overflow-hidden z-10 relative rounded-2xl h-56 flex flex-col justify-end`}>
 			<Image className="self-end mr-5 absolute -z-10 bottom-40" src={svg} alt="Imagen de rutina" width={70} height={70}/>

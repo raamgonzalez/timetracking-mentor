@@ -1,36 +1,31 @@
 'use client'
 import Image from "next/image";
 import UserStats from "./UserStats";
-import { useEffect, useState } from "react";
-
+import { useState } from "react";
+import {data} from '../mock/data';
 
 
 export default function UserCard({hour}){
 	const [hours, setHours] = useState(hour)
 
-
 	const handleDailyChangeStats = () => {
-		const newDaily = hours.map((hours) => { return hours + Math.round(Math.random(hours))})
-		setHours(newDaily)
+		const newDaily = data.daily.map((hours) => hours)
+		// const newDaily = hours.map((hours) => { return hours + Math.round(Math.random(hours*length))})
+		return setHours(newDaily)
 	}
 
 	const handleWeeklyChangeStats = () => {
-		const newWeek = hours.map((hours) => { return hours + Math.round(Math.random(hours))})
-		setHours(newWeek)
+		const newWeek = data.weekly.map((hours) => hours)
+		// const newWeek = hours.map((hours) => { return hours + Math.round(Math.random(hours*length))})
+		return setHours(newWeek)
 	}
 
 	const handleMonthlyChangeStats = () => {
-		const newMonth = hours.map((hours) => { return hours + Math.round(Math.random(hours*length))})
-		setHours(newMonth)
+		const newMonth = data.monthly.map((hours) => hours)
+		return setHours(newMonth)
 	}
 
-// 	const handleChangeStats =  () =>{
-// 		if(handleDailyChangeStats()) return hours.map((hours) => { return Math.round(Math.random(hours))})
-// 		else if(handleWeeklyChangeStats()) return hours.map((hours) => { return Math.round(Math.random(hours))})
-// 		else return hours.map((hours) => { return Math.round(Math.random(hours))})
-// }
-
-
+	console.log(hours)
 
 	return (
 		<>

@@ -1,43 +1,8 @@
+import { v4 as uuidv4} from 'uuid';
+
+
 export const data = {
-
-  daily: [
-		{
-			id: uuidv4(),
-			name: "whatsapp",
-			href: "https://wa.me/1155789343",
-      state: true
-		},
-		{
-			id: uuidv4(),
-			name: "facebook",
-			href: "https://www.facebook.com/raam.gonzalez/",
-      state: false
-
-		},
-		{
-			id: uuidv4(),
-			name: "github",
-			href: "https://github.com/raamgonzalez",
-      state: true
-		},
-		{
-			id: uuidv4(),
-			name: "behance",
-			href: "https://www.behance.net/ramsesgonzale",
-      state: true
-		},
-		{
-			id: uuidv4(),
-			name: "linkedin",
-			href: "https://www.linkedin.com/in/ramsesoctaviogonzalez/",
-      state: true
-		},
-    {
-			id: uuidv4(),
-			name: "instagram",
-			href: "https://www.instagram.com/raam.gonzalez/",
-      state: false
-		},
-  ],
-
-};
+	daily : [2,3,2,2,4,1],
+	weekly : [7,32,10,8,7],
+	monthly : [23,64,12,43,12]
+}
