@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {data} from '../mock/data'
 
 export default function UserStatsCard({title, hours, color, svg}){
 

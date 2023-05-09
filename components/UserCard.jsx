@@ -2,21 +2,19 @@
 import Image from "next/image";
 import UserStats from "./UserStats";
 import { useState } from "react";
-import {data} from '../mock/data';
 
 
-export default function UserCard({hour}){
+
+export default function UserCard({hour, data}){
 	const [hours, setHours] = useState(hour)
 
 	const handleDailyChangeStats = () => {
 		const newDaily = data.daily.map((hours) => hours)
-		// const newDaily = hours.map((hours) => { return hours + Math.round(Math.random(hours*length))})
 		return setHours(newDaily)
 	}
 
 	const handleWeeklyChangeStats = () => {
 		const newWeek = data.weekly.map((hours) => hours)
-		// const newWeek = hours.map((hours) => { return hours + Math.round(Math.random(hours*length))})
 		return setHours(newWeek)
 	}
 
@@ -25,7 +23,6 @@ export default function UserCard({hour}){
 		return setHours(newMonth)
 	}
 
-	console.log(hours)
 
 	return (
 		<>
