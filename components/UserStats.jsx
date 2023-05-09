@@ -1,5 +1,5 @@
 import UserStatsCard from "./UserStatsCard"
-import {data} from '../mock/data'
+
 
 export default function UserStats({hours}){
 
